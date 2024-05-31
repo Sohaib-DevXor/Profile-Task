@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Profile</title>
+    <link rel="stylesheet" href="../Add/Style_Add/body.css">
+    <link rel="stylesheet" href="../Add/Style_Add/buttons.css">
+    <link rel="stylesheet" href="../Add/Style_Add/form.css">
+    <link rel="stylesheet" href="../Add/Style_Add/main.css">
+    <link rel="stylesheet" href="../Add/Style_Add/profile.css">
+</head>
+<body>
+    <header>
+        <img src="../Image/Avatar.png" alt="Site Logo" class="logo">
+        <h1>HTML Work With API</h1>
+        <div class="header-buttons">
+            <a href="../main.html"><button>Get</button></a>
+            <a href="../Edit/Edit.html"><button>Edit</button></a>
+            <a href="../Delete/Delete.html"><button>Delete</button></a>
+        </div>
+    </header>
+    <main>
+        <form id="addProfileForm" onsubmit="event.preventDefault(); postData();">
+            <h2>Add Profile</h2>
+            <input type="text" id="username" placeholder="Enter Username" required>
+            <input type="text" id="userLogo" placeholder="Enter User Logo URL" required>
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <input type="text" id="discordLink" placeholder="Enter Discord Server Link" required>
+            <button type="submit" id="submitButton">Add Profile</button>
+            <div id="responseMessage" class="profile-result"></div>
+        </form>
+    </main>
+    <script src="../Add/Scripts.js"></script> 
+</body>
+</html>

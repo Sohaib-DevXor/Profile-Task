@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="../Edit/Style_Edit/body.css">
+    <link rel="stylesheet" href="../Edit/Style_Edit/buttons.css">
+    <link rel="stylesheet" href="../Edit/Style_Edit/form.css">
+    <link rel="stylesheet" href="../Edit/Style_Edit/main.css">
+    <link rel="stylesheet" href="../Edit/Style_Edit/profile.css">
+</head>
+<body>
+    <header>
+        <img src="../Image/Avatar.png" alt="Site Logo" class="logo">
+        <h1>HTML Work With API</h1>
+        <div class="header-buttons">
+            <a href="../Add/Add.html"><button>Add</button></a>
+            <a href="../main.html"><button>Get</button></a>
+            <a href="../Delete/Delete.html"><button>Delete</button></a>
+        </div>
+    </header>
+    <main>
+        
+        <div class="form-container">
+            <form id="searchProfileForm" onsubmit="event.preventDefault(); searchProfile();">
+                <h2>Edit Profile</h2>
+                <input type="text" id="profileIdSearch" placeholder="Enter Profile ID" required>
+                <button type="submit">Search ID</button>
+            </form>
+            <pre id="responseMessage" class="profile-result"></pre>
+            <form id="editProfileForm" style="display:none;" onsubmit="event.preventDefault(); confirmEdit();">
+                <input type="text" id="username" placeholder="Enter New Username">
+                <input type="text" id="userLogo" placeholder="Enter New User Logo URL">
+                <input type="email" id="email" placeholder="Enter New Email">
+                <input type="text" id="discordLink" placeholder="Enter New Discord Server Link">
+                <button type="submit">Edit Profile</button>
+            </form>
+            <div id="confirmationMessage" style="display:none;">
+                <p>Are you sure to save this change?</p>
+                <button onclick="saveChanges()">Yes</button>
+                <button onclick="cancelEdit()">No</button>
+            </div>
+        </div>
+    </main>
+    <script src="../Edit/Scripts.js"></script>
+</body>
+</html>

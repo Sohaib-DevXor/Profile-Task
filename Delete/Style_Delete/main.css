@@ -1,0 +1,32 @@
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header .logo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-buttons button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-buttons button:hover {
+    background-color: #777;
+}
+

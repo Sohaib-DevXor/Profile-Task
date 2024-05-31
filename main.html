@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML API</title>
+    <link rel="stylesheet" href="Get/Style_Get/body.css">
+    <link rel="stylesheet" href="Get/Style_Get/buttons.css">
+    <link rel="stylesheet" href="Get/Style_Get/form.css">
+    <link rel="stylesheet" href="Get/Style_Get/main.css">
+    <link rel="stylesheet" href="Get/Style_Get/profile.css">
+</head>
+<body>
+    <header>
+        <img src="Image/Avatar.png" alt="Site Logo" class="logo">
+        <h1>HTML Work With API</h1>
+        <div class="header-buttons">
+            <a href="Add/Add.html"><button>Add</button></a>
+            <a href="Edit/Edit.html"><button>Edit</button></a>
+            <a href="Delete/Delete.html"><button>Delete</button></a>
+        </div>
+    </header>
+    <main>
+        <h3>My Name Sohaib & I'm Trying How To Use API In Front-End</h3>
+        <h5>I am now creating a profile containing: username, user logo, email user, Discord server link and sending all this into the database from the API key</h5>
+
+        <div class="form-container">
+            <h2>Get Profile</h2>
+            <input type="text" id="getId" placeholder="Enter Profile ID">
+            <button onclick="getProfile()">Get Profile</button>
+            <div id="profileResult" class="profile-result">
+            </div>
+        </div>
+    </main>
+    <script src="Get/Scripts.js"></script>
+</body>
+</html>
